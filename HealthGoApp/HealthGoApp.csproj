@@ -174,6 +174,7 @@
     <Content Include="images\cover_bg_3.jpg" />
     <Content Include="images\cover_bg_4.jpg" />
     <Content Include="images\cover_bg_5.jpg" />
+    <Content Include="images\heathogoloading.gif" />
     <Content Include="images\loc.png" />
     <Content Include="images\place-1.jpg" />
     <Content Include="images\place-10.jpg" />

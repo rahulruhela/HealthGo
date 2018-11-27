@@ -455,6 +455,8 @@
   
         $("#btnCalculate").click(function (e) {
             e.preventDefault();
+            
+            $(".loader").fadeIn("slow");
 
             var txtYourName = $('#txtYourName').val();
             var txtIncome = $('#txtIncome').val();
@@ -539,6 +541,7 @@
                     cache: false,
                     success: function (data) {
                         debugger;
+                        $(".loader").fadeOut("slow");
                         $('#divInsuranceInfo').css("display", "block");
                         $('#namespan').text(data.FullName);
                         $('#h3BMI').text("Your BMI:"+data.BmiFloat);

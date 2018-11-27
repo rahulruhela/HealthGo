@@ -27,9 +27,22 @@
     <link rel="stylesheet" href="~/travel/css/style.css">
 
     <script src="~/travel/js/modernizr-2.6.2.min.js"></script>
-
+    <style>
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;           
+            background: url('images/heathogoloading.gif') 50% 50% no-repeat rgb(249,249,249);
+            opacity: .8;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="loader" id="loaderdiv" style="display:none"></div>
     <div id="fh5co-wrapper">
         <div id="fh5co-page">
             <header id="fh5co-header-section" class="sticky-banner">
@@ -42,7 +55,7 @@
                             <ul class="sf-menu" id="fh5co-primary-menu">
                                 <li class="active"><a href="/">Home</a></li>
                                 <li>
-                                    <a href="#" class="fh5co-sub-ddown">Vacations</a>
+                                    <a href="#" class="fh5co-sub-ddown">About Us</a>
                                     @*<ul class="fh5co-sub-menu">
                                         <li><a href="#">Family</a></li>
                                         <li><a href="#">CSS3 &amp; HTML5</a></li>
